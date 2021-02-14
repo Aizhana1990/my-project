@@ -1,0 +1,399 @@
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  color: #18191F;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 800;
+}
+
+p {
+  line-height: 32px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 16px;
+  z-index: 1;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  margin-right: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.navbar-btn {
+  width: 45px;
+  height: 40px;
+  align-items: center;
+  position: fixed;
+  z-index: 1234567890;
+  right: 50px;
+  top: 50px;
+  display: none;
+}
+.navbar-btn span {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 5px;
+  background: purple;
+}
+.navbar-btn span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: purple;
+  left: 0;
+  top: 10px;
+}
+.navbar-btn span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: purple;
+  left: 0;
+  bottom: 10px;
+}
+
+.application__item {
+  display: inline-block;
+  margin-left: 7px;
+}
+
+.hero {
+  height: 866px;
+  background: url("../images/background.png") no-repeat center/cover;
+}
+.hero__container {
+  height: 100%;
+}
+.hero__mobile {
+  position: absolute;
+  bottom: 58px;
+  right: 0;
+}
+.hero__title {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+  margin-bottom: 32px;
+  padding-top: 240px;
+}
+
+.btn {
+  background: #8C30F5;
+  border-radius: 8px;
+  padding: 16px 41px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  transition: 0.5s;
+}
+.btn:hover {
+  background: #a15def;
+}
+
+.logo-clods {
+  padding: 16px 0;
+}
+
+.logo-list {
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+}
+.logo-list:before {
+  width: 100%;
+  position: absolute;
+  content: "";
+  height: 1px;
+  background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+  top: 0;
+  left: 0;
+}
+.logo-list:after {
+  width: 100%;
+  position: absolute;
+  content: "";
+  height: 1px;
+  background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+  bottom: 0;
+  left: 0;
+}
+.logo-list__item {
+  margin: 0 32px;
+  transition: 0.5s;
+}
+.logo-list__item:hover {
+  filter: grayscale(100);
+}
+
+.feature {
+  text-align: center;
+  padding: 64px 0;
+}
+.feature__title {
+  margin-bottom: 8px;
+}
+.feature__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 64px;
+}
+.feature__desc {
+  margin-bottom: 54px;
+}
+
+.feature-card svg {
+  transition: 0.4s;
+}
+.feature-card:hover svg {
+  transform: scale(1.2);
+}
+.feature-card__caption {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 24px 0 8px;
+}
+.feature-card__info {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.testimonials {
+  background: #D5FAFC;
+  padding: 120px 0 80px;
+}
+.testimonials__title {
+  position: relative;
+}
+.testimonials__info {
+  margin: 8px 0 24px;
+}
+.testimonials__right-side {
+  padding-top: 48px;
+}
+.testimonials__left-side {
+  padding-left: 95px;
+  position: relative;
+}
+.testimonials__left-side svg {
+  position: absolute;
+  left: 0;
+  top: -55px;
+}
+.testimonials__left-side .testimonials-card {
+  float: right;
+}
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
+.testimonials-card {
+  background: white;
+  margin-bottom: 32px;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(41, 41, 42, 0.07);
+}
+.testimonials-card__content {
+  padding-left: 32px;
+  margin-top: 32px;
+  position: relative;
+}
+.testimonials-card__content svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.testimonials-card__review {
+  margin-bottom: 24px;
+}
+.testimonials-card_lg {
+  max-width: 445px;
+}
+.testimonials-card_md {
+  max-width: 350px;
+}
+.testimonials-author__name {
+  line-height: 28px;
+}
+.testimonials-author__status {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #969BAB;
+}
+
+.grid {
+  display: grid;
+  grid-column-gap: 30px;
+}
+.grid__col_6 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.stats {
+  padding: 82px 0;
+}
+.stats-list {
+  grid-row-gap: 40px;
+}
+.stats-list__item {
+  display: flex;
+  align-items: center;
+}
+.stats-list__item svg {
+  margin-right: 27px;
+}
+.stats-list__heading {
+  font-size: 18px;
+  line-height: 32px;
+}
+.stats-list__subtitle {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.headline {
+  padding: 64px 0;
+}
+.headline__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 78px;
+}
+.headline__column img {
+  max-width: 100%;
+}
+.headline__desc {
+  margin: 32px 0;
+}
+.headline__main {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  font-size: 20px;
+  line-height: 30px;
+  color: #8C30F5;
+}
+.button svg {
+  color: #8C30F5;
+}
+
+.fashion__images {
+  padding: 48px 0 64px;
+}
+
+.fashion__images img {
+  max-width: 100%;
+}
+
+.project {
+  background: #2EC5CE;
+}
+.project__mobile {
+  position: absolute;
+  right: 0;
+  top: 58px;
+}
+.project__phone {
+  position: absolute;
+  bottom: 58px;
+  left: 0;
+  right: 0;
+}
+.project .project__img {
+  position: relative;
+}
+.project__desc {
+  margin-bottom: 48px;
+}
+.project__btn {
+  margin: 8px 0;
+}
+.project__column {
+  padding: 68px 0 68px;
+}
+
+.project-item {
+  display: inline-block;
+  margin-left: 0;
+}
+
+.footer {
+  background: #0B0D17;
+  padding: 56px;
+}
+.footer__content svg {
+  margin-bottom: 24px;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+.footer__info {
+  color: white;
+  font-size: 16px;
+  line-height: 26px;
+  margin-right: 24px;
+}
+.footer__title {
+  color: #D9DBE1;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer-nav {
+  margin: 12px 0 24px;
+}
+.footer__btn {
+  color: #D9DBE1;
+  font-size: 18px;
+  line-height: 28px;
+}
+.footer__appstore {
+  margin-bottom: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
